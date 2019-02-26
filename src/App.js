@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ShoeShow from './Components/ShoeShow/ShoeShow';
+import ShoeCard from './Components/ShoeCard/ShoeCard'
 import { Route, Switch } from 'react-router-dom'
 
 class App extends Component {
@@ -28,7 +28,6 @@ class App extends Component {
   // }
   render() {
     const { shoes } = this.state
-    console.log(shoes)
     return (
       // pages
         // home page => login component and a signup component 
@@ -36,7 +35,7 @@ class App extends Component {
         <Switch>
           <Route exact path={'/'} component={() => <div>this is the root route</div>} />
           <Route exact path={'/shoes'} component={() => <div>this is the shoes index route</div>} />
-          <Route exact path={'/shoe'} component={() => <div>this is the shoe show route</div>} />
+          <Route exact path={'/shoes/:id'} component={() => <ShoeCard />} />
           <Route exact path={'/profile'} component={() => <div>this is the user profile route</div>} />
         </Switch>
 
