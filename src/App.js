@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ShoeCard from './Components/ShoeCard/ShoeCard'
+import { Route, Switch } from 'react-router-dom'
 
 class App extends Component {
-
-  componentDidMount() {
-    this.getShoes()
+  state = {
+    shoes: []
   }
 
-  getShoes = async () => {
-    try {
-      const shoeResponse = await fetch('http://localhost:8000/api/v1/shoes')
+  // componentDidMount() {
+  //   this.getShoes()
+  // }
+
+  // getShoes = async () => {
+  //   try {
+  //     const shoeResponse = await fetch('http://localhost:8000/api/v1/shoes')
       
-      const shoeParsed = await shoeResponse.json()
+  //     const shoeParsed = await shoeResponse.json()
+  //     this.setState({
+  //       shoes: shoeParsed.shoes
+  //     })
 
-      console.log(shoeParsed)
-    } catch(err) {
-      console.log(err)
-    }
-  }
+  //   } catch(err) {
+  //     console.log(err)
+  //   }
+  // }
   render() {
+    const { shoes } = this.state
     return (
-      <div className="App">
-      <h1>Kick It</h1>
+      // pages
+        // home page => login component and a signup component 
+      <div>
+        <Switch>
+          <Route exact path={'/'} component={() => <div>this is the root route</div>} />
+          <Route exact path={'/shoes'} component={() => <div>this is the shoes index route</div>} />
+          <Route exact path={'/shoes/:id'} component={() => <ShoeCard />} />
+          <Route exact path={'/profile'} component={() => <div>this is the user profile route</div>} />
+        </Switch>
+
       </div>
     );
   }
