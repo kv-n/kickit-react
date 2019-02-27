@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ShoeCard from '../ShoeCard/ShoeCard'
 import { withRouter } from 'react-router-dom'
+import './ShowShoe.css'
 
 // extend class component
 // component did mount and garb the shoe by the id in the params
