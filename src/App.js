@@ -7,7 +7,8 @@ import { Route, Switch } from 'react-router-dom'
 
 class App extends Component {
   state = {
-    shoes: []
+    shoes: [],
+    users: []
   }
 
   // componentDidMount() {
@@ -28,7 +29,7 @@ class App extends Component {
   //   }
   // }
   render() {
-    const { shoes } = this.state
+    const { shoes, users } = this.state 
     return (
       // pages
         // home page => login component and a signup component 

@@ -7,7 +7,8 @@ import { withRouter } from 'react-router-dom'
 // fetch('http://localhost:8000/api/v1/shoes/${this.props.match.params.id})
 class ShowShoe extends Component {
     state = {
-        shoes: {}
+        shoes: {},
+        users: {}
     }
 
       componentDidMount() {
@@ -32,7 +33,7 @@ class ShowShoe extends Component {
         const { shoes } = this.state
         console.log(shoes)
         return(
-            <ShoeCard shoe={shoes} />
+            <ShoeCard shoes={shoes}/>
         )
     }
 }
