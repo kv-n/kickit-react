@@ -13,6 +13,7 @@ html {
   .ShoeCard-Container {
     position: relative;
     margin: auto;
+    margin-bottom: 3rem; 
     overflow: hidden;
     width: 37rem;
     height: 21rem;
@@ -41,6 +42,8 @@ html {
   img {
     width: 290px;
     margin-top: 47px;
+    margin-left: 1rem; 
+    border-radius: 2rem; 
   }
   
   .product {

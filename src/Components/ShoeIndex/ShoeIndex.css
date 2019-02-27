@@ -1,9 +1,10 @@
 .shoe-index-header {
     color: #fff; 
     text-align: center; 
-    font-size: 3rem; 
+    font-size: 4rem; 
 }
 
 .index-flex {
     display: flex; 
+    flex-wrap: wrap; 
 }
