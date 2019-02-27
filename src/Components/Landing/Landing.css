@@ -30,7 +30,7 @@ video {
     text-align: center;
 }
 
-h1 {
+.splash h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 14vh;
     /* margin-top: 160px; */
@@ -41,3 +41,4 @@ h1 {
     margin: 0 auto;
     text-align: center;
 }
+
