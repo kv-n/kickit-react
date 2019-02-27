@@ -17,16 +17,6 @@ video {
     transition: 1s opacity;
 }
 
-/* .splash-container{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    height: 100vh;
-} */
-
-
-
-
 .splash {
     height:100vh;
     display:flex;
@@ -42,7 +32,7 @@ video {
 
 h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 7rem;
+    font-size: 14vh;
     /* margin-top: 160px; */
     letter-spacing: .3rem;
     color: white;

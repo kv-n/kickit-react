@@ -9,6 +9,7 @@ const Splash = () => {
 
             <video id="bgvid" style={{ width: '100%' }}
                 src="/kickit.mp4"
+                loop
                 autoPlay
                 muted />
         </div>

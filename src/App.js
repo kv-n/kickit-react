@@ -7,6 +7,7 @@ import Profile from './Components/Profile/Profile'
 import { Route, Switch } from 'react-router-dom'
 import Splash from './Components/Landing/Landing'
 import Register from './Components/Register/Register'
+import Login from './Login/Login';
 
 class App extends Component {
   state = {
@@ -60,7 +61,8 @@ class App extends Component {
       <div>
         <Switch>
           <Route exact path={'/'} component={() => <Splash />} />
-          <Route exact path={'/register'} component={() => <Register  handleRegister={this.handleRegister}/>} />
+          <Route exact path={'/register'} component={() => <Register handleRegister={this.handleRegister}/>} />
+          <Route exact path={'/login'} component={() => <Login />} />
           <Route exact path={'/shoes'} component={() => <ShoeIndex />} />
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
           <Route exact path={'/profile'} component={() => <Profile />} />
