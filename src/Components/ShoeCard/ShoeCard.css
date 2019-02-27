@@ -41,8 +41,8 @@ html {
   
   img {
     width: 290px;
-    margin-top: 47px;
-    margin-left: 1rem; 
+    margin-top: 60px;
+    margin-left: 1.5rem; 
     border-radius: 2rem; 
   }
   
@@ -50,7 +50,7 @@ html {
     position: absolute;
     width: 40%;
     height: 100%;
-    top: 15%;
+    top: 19%;
     left: 60%;
   }
   
