@@ -1,15 +1,65 @@
-.Profile-Container {
+.Forms-Container {
     display: flex; 
     flex-direction: column; 
+    margin-left: 20rem; 
     padding: 2rem; 
 }
 
-.Profile-Container input {
+.Forms-Container input {
     width: 40rem; 
-    height: 3rem; 
+    height: 2rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
     padding: 1rem; 
     outline: none; 
+    font-size: 1.5rem; 
+}
+
+.profile-container {
+    margin-top: 2rem; 
+}
+
+.profile-btn {
+    width: 20rem; 
+    height: 5rem; 
+    border: 0rem solid #fff; 
+    border-radius: .5rem; 
+    background-color: #C6232C; 
+    color: #fff; 
+    padding: 1rem; 
+    outline: none; 
     font-size: 2rem; 
+    margin-left: 12rem; 
+}
+
+.profile-btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.profile-btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.profile-header {
+    font-size: 4rem;
+}
+
+.input1 {
+    margin-bottom: 1rem; 
+}
+
+.input2 {
+    margin-bottom: 1rem; 
+}
+
+.input3 {
+    margin-bottom: 1rem; 
+}
+
+.input4 {
+    margin-bottom: 1rem; 
+}
+
+.input5 {
+    margin-bottom: 3rem; 
 }

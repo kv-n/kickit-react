@@ -34,9 +34,7 @@ class ShoesIndex extends Component {
         )
     }
 }
-// const ShoeIndex = ({shoes}) => {
 
-// }
 
 export default ShoesIndex
 
