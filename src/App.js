@@ -4,6 +4,7 @@ import './App.css';
 import ShowShoe from './Components/ShowShoe/ShowShoe'
 import ShoeIndex from './Components/ShoeIndex/ShoeIndex'
 import { Route, Switch } from 'react-router-dom'
+import Splash from './Components/Landing/Landing'
 
 class App extends Component {
   state = {
@@ -34,7 +35,7 @@ class App extends Component {
         // home page => login component and a signup component 
       <div>
         <Switch>
-          <Route exact path={'/'} component={() => <div>this is the root route</div>} />
+          <Route exact path={'/'} component={() => <Splash />} />
           <Route exact path={'/shoes'} component={() => <ShoeIndex />} />
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
           <Route exact path={'/profile'} component={() => <div>this is the user profile route</div>} />
