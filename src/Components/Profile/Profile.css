@@ -1,0 +1,15 @@
+.Profile-Container {
+    display: flex; 
+    flex-direction: column; 
+    padding: 2rem; 
+}
+
+.Profile-Container input {
+    width: 40rem; 
+    height: 3rem; 
+    border: 0rem solid #fff; 
+    border-radius: .5rem; 
+    padding: 1rem; 
+    outline: none; 
+    font-size: 2rem; 
+}

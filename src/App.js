@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ShowShoe from './Components/ShowShoe/ShowShoe'
 import ShoeIndex from './Components/ShoeIndex/ShoeIndex'
+import Profile from './Components/Profile/Profile'
 import { Route, Switch } from 'react-router-dom'
 import Splash from './Components/Landing/Landing'
 
@@ -39,7 +40,7 @@ class App extends Component {
           <Route exact path={'/'} component={() => <Splash />} />
           <Route exact path={'/shoes'} component={() => <ShoeIndex />} />
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
-          <Route exact path={'/profile'} component={() => <div>this is the user profile route</div>} />
+          <Route exact path={'/profile'} component={() => <Profile />} />
         </Switch>
 
       </div>

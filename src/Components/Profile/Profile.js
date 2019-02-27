@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import '../Profile/Profile.css'
 
 class Profile extends Component {
     render(){
         return(
-            <div className="Profile-Container">
-                <forms>
+            <div>
+                <forms className="Profile-Container">
                     <input type="text" name="brand"/>
                     <input type="text" name="name"/>
                     <input type="text" name="description"/>
