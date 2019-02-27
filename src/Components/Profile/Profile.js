@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../Profile/Profile.css'
+import { withRouter } from 'react-router-dom'
 
 class Profile extends Component {
 
@@ -25,14 +26,8 @@ class Profile extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
+        this.props.history.push("/shoes");
         const user = JSON.stringify({
-            "brand": "Adidas",
-            "name": "ultra-boost",
-            "description": "never worn",
-            "created_by": "1",
-            "size": "10.5",
-            "price": "200",
-            "picture": "google.com"
         })
 
         console.log(this.state)
@@ -68,4 +63,4 @@ class Profile extends Component {
 }
 
 
-export default Profile 
+export default withRouter(Profile) 

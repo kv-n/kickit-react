@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ShoeCard from '../ShoeCard/ShoeCard'
+import './ShoeIndex.css'
 
 class ShoesIndex extends Component {
     state = {
@@ -25,11 +26,14 @@ class ShoesIndex extends Component {
         console.log(this.state)
         return (
             <div>
-                {
-                    this.state.shoes.map((s, i) => 
-                        <ShoeCard shoe={s} key={i} />    
-                    )
-                } 
+                <h1 className="shoe-index-header">KickIt</h1>
+                <div className="index-flex">
+                    {
+                        this.state.shoes.map((s, i) => 
+                            <ShoeCard shoe={s} key={i} />    
+                        )
+                    } 
+                </div>
             </div>
         )
     }

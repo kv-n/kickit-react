@@ -1,0 +1,4 @@
+.shoe-flex {
+    display: flex; 
+    flex-direction: row; 
+}
