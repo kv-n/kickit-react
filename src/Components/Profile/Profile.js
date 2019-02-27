@@ -26,7 +26,6 @@ class Profile extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
-        this.props.history.push("/shoes");
         const user = JSON.stringify({
         })
 
@@ -39,7 +38,7 @@ class Profile extends Component {
             'Content-Type': 'application/json'
             }
         });
-
+        this.props.history.push("/shoes");
         console.log(shoesResponse, 'hello')
     }
     
