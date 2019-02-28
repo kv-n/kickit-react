@@ -1,5 +1,6 @@
 import React from 'react';
 import './ShoeCard.css'
+import { Link } from 'react-router-dom'
 
 const ShoeCard = (props) =>
     <div className="ShoeCard-Container">
@@ -15,7 +16,7 @@ const ShoeCard = (props) =>
         <div className="buttons">
         <button className="add">Add to Cart</button>
         <button className="like"><span>♥</span></button>
-        <button className="edit-btn">EDIT</button>
+        <button className="edit-btn"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
       </div>
       </div>
     </div>

@@ -34,7 +34,8 @@ class ShowShoe extends Component {
         const { shoes } = this.state
         console.log(shoes)
         return(
-            <ShoeCard shoes={shoes}/>
+            // <ShoeCard shoes={shoes}/>
+            <div>hello</div>
         )
     }
 }

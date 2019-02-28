@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './Navigation.css'
 import LogOut from '../../LogOut/LogOut'
+import './Navigation.css'
+
 
 
 const Navigation = (props) => {
@@ -14,8 +15,8 @@ const Navigation = (props) => {
                 <li id="list2" className="nav-list"><Link to='/profile'>Profile</Link></li>
                 {
                     props.currentUser.username
-                        ? <li id="list3" className="nav-list"><LogOut/></li>
-                        : <li id="list3" className="nav-list"><Link to='/'>Log In</Link></li>
+                        ? <p id="list3" onClick={props.handleLogout} className="nav-list"><LogOut doSetCurrentUser={props.doSetCurrentUser}/></p>
+                        : <li id="list3" className="nav-list">Log In</li>
                 }
                 <li id="list4" className="nav-list"><Link to='/register'>Register</Link></li>
             </ul>
