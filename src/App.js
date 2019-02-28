@@ -12,15 +12,9 @@ import Navigation from './Components/Navigation/Navigation'
 
 
 class App extends Component {
-  // _isMounted = false
-
   state = {
     currentUser: {}
   }
-
-  // // componentDidMount() {
-  // //   this._isMounted = true;
-  // // }
 
   doSetCurrentUser = (currentUser) => {
     console.log(currentUser)
@@ -97,7 +91,6 @@ class App extends Component {
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
           <Route exact path={'/shoes/:id/edit'} component={() => <Edit/>} />
         </Switch>
-        <div><Link to='/shoes'>hello</Link></div>
       </div>
     );
   }
