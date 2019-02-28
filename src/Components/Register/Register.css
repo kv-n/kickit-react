@@ -1,0 +1,62 @@
+.signup-container {
+    margin-top: 5rem; 
+}
+
+.register-container {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 30rem; 
+    margin-top: 2rem; 
+}
+
+
+.register-container input {
+    width: 30rem; 
+    height: 1.5rem; 
+    border: 0rem solid #fff; 
+    border-radius: .5rem; 
+    padding: 1rem; 
+    outline: none; 
+    font-size: 1.5rem; 
+}
+
+.register-header {
+    color: #fff; 
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 2rem; 
+}
+
+.register-btn {
+    width: 20rem; 
+    height: 5rem; 
+    border: 0rem solid #fff; 
+    border-radius: .5rem; 
+    background-color: #C6232C; 
+    color: #fff; 
+    padding: 1rem; 
+    outline: none; 
+    font-size: 2rem; 
+    margin-left: 6rem; 
+}
+
+.register-btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.register-btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.register-input1 {
+    margin-bottom: 1rem; 
+    
+}
+
+.register-input2 {
+    margin-bottom: 1rem; 
+}
+
+.register-input3 {
+    margin-bottom: 2rem;
+}
