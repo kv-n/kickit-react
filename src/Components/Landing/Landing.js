@@ -1,13 +1,14 @@
 import React from 'react';
 import './Landing.css'
 import Login from '../../Login/Login'
+import Navigation from '../Navigation/Navigation'
 
-const Splash = () => {
+const Splash = (props) => {
     return (
         <div className="splash-container">
         <div className="splash">
             <h1>//Kickit.</h1>
-            <Login/>
+            <Login doSetCurrentUser={props.doSetCurrentUser} />
             <video id="bgvid" style={{ width: '100%' }}
                 src="/kickit.mp4"
                 loop

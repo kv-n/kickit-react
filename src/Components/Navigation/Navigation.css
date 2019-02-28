@@ -1,0 +1,48 @@
+.nav-container {
+    background-color: #C6232C; 
+    margin-top: 0rem; 
+    padding: .1rem; 
+    width: 100%; 
+}
+
+.nav-container a {
+    text-decoration: none; 
+}
+
+.nav-container a:visited {
+    color: #fff; 
+}
+
+.logo-nav {
+    height: 2rem; 
+    width: 2rem; 
+    margin-top: -.6rem; 
+    margin-right: 1rem; 
+    margin-bottom: 0rem; 
+}
+
+.nav-flex {
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 2rem; 
+}
+
+.nav-list {
+    color: #fff; 
+    list-style-type: none;
+}
+
+#list1 {
+    margin-right: 1rem;    
+}
+
+#list2 {
+    margin-right: 1rem; 
+}
+
+#list3 {
+    margin-right: 1rem; 
+}
+#list4 {
+    margin-right: 1rem; 
+}

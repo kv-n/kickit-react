@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Login.css'
 import { withRouter } from 'react-router-dom'
 
 
@@ -33,6 +34,7 @@ class Login extends Component {
 
     const parsedResponse = await loginResponse.json();
     console.log(this.state)
+    this.props.doSetCurrentUser(parsedResponse)
     this.props.history.push("/shoes");
     console.log(parsedResponse, 'logged')
   }
@@ -41,21 +43,17 @@ class Login extends Component {
   render(){
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Username:
-          <input type='text' name='username' onChange={this.handleChange}/>
-        </label>
-        <label>
-          email:
-          <input type='email' name='email' onChange={this.handleChange}/>
-        </label>
-        <label>
-          password:
-          <input type='password' name='password' onChange={this.handleChange}/>
-        </label>
-        <button type='submit'>Login</button>
+          <label>
+            <input id="login1" className="login-input" type='text' name='username' onChange={this.handleChange}/>
+          </label>
+          <label>
+            <input id="login2" className="login-input" type='email' name='email' onChange={this.handleChange}/>
+          </label>
+          <label>
+            <input id="login3" className="login-input" type='password' name='password' onChange={this.handleChange}/>
+          </label>
+        <button className="login-btn" type='submit'>Login</button>
       </form>
-
       )
   }
 }
