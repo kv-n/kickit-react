@@ -33,6 +33,7 @@ class Edit extends Component {
     
         } catch(err) {
           console.log(err)
+          console.log('hello')
         }
       }
 
