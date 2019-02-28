@@ -4,10 +4,11 @@ import './App.css';
 import ShowShoe from './Components/ShowShoe/ShowShoe'
 import ShoeIndex from './Components/ShoeIndex/ShoeIndex'
 import Profile from './Components/Profile/Profile'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import Splash from './Components/Landing/Landing'
 import Register from './Components/Register/Register'
 import Login from './Login/Login';
+
 
 class App extends Component {
   state = {

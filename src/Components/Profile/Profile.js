@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../Profile/Profile.css'
 import { withRouter } from 'react-router-dom'
+import LogOut from '../../LogOut/LogOut'
 
 class Profile extends Component {
 
@@ -47,6 +48,7 @@ class Profile extends Component {
         return(
             <div className="profile-container">
                 <h1 className="profile-header">Add Kicks Here</h1>
+                <LogOut/>
                 <form className="Forms-Container" onSubmit={this.handleSubmit}>
                     <input className="input1" onChange={(e) => this.handleInput(e)} type="text" name="brand" placeholder="Brand" />
                     <input className="input2" onChange={(e) => this.handleInput(e)} type="text" name="name" placeholder="Type" />
