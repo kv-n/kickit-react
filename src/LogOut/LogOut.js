@@ -25,7 +25,6 @@ class Userlogout extends Component {
         }
     }
 
-
     render() {
         return (
             <div>
