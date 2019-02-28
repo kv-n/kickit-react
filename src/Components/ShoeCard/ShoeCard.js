@@ -12,9 +12,9 @@ const ShoeCard = (props) =>
         <h2 className="size">Size: {props.shoe.size}</h2>
         <h2 className="price">${props.shoe.price}</h2>
         <p className="desc">{props.shoe.description}</p>
-        <div class="buttons">
-        <button class="add">Add to Cart</button>
-        <button class="like"><span>♥</span></button>
+        <div className="buttons">
+        <button className="add">Add to Cart</button>
+        <button className="like"><span>♥</span></button>
       </div>
       </div>
     </div>
