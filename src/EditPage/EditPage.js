@@ -54,8 +54,23 @@ class Edit extends Component {
             'Content-Type': 'application/json'
             }
         });
+        this.props.history.push("/shoes");
         console.log(await shoe.json())
         // this.props.history.push("/shoes");
+    }
+
+    handleDelete = async (e) => {
+        e.preventDefault();
+        const shoe = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`, {
+          method: 'DELETE',
+          credentials: 'include',
+          body: JSON.stringify(this.state.shoe),
+          headers:{
+            'Content-Type': 'application/json'
+            }
+        });
+        this.props.history.push("/shoes");
+        console.log(await shoe.json())
     }
     
     render() {
@@ -71,6 +86,7 @@ class Edit extends Component {
                     <input className="input5" onChange={(e) => this.handleInput(e)} type="text" name="price" placeholder="Price" />
                     <input className="input6" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" />
                     <button type="submit" className="profile-btn">Kickit</button>
+                    <button type="submit" className="profile-btn" onClick={(e) => this.handleDelete(e)}>Delete</button>
                 </form>
             </div>
         )
