@@ -32,9 +32,9 @@ class Login extends Component {
     });
 
     const parsedResponse = await loginResponse.json();
-
+    console.log(this.state)
     this.props.history.push("/shoes");
-    console.log(parsedResponse, 'logged in')
+    console.log(parsedResponse, 'logged')
   }
 
 
