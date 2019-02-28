@@ -5,10 +5,9 @@
 .register-container {
     display: flex; 
     flex-direction: column; 
-    margin-left: 30rem; 
+    margin-left: 28.5rem; 
     margin-top: 2rem; 
 }
-
 
 .register-container input {
     width: 30rem; 
@@ -29,15 +28,15 @@
 
 .register-btn {
     width: 20rem; 
-    height: 5rem; 
+    height: 3.7rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
     background-color: #C6232C; 
     color: #fff; 
     padding: 1rem; 
     outline: none; 
-    font-size: 2rem; 
-    margin-left: 6rem; 
+    font-size: 1.5rem; 
+    margin-left: 5.8rem; 
 }
 
 .register-btn:hover {

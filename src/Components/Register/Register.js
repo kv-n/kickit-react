@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Register.css'
-import Navigation from '../Navigation/Navigation'
 import { withRouter } from 'react-router-dom'
 
 
@@ -28,7 +27,6 @@ class Register extends Component {
   render(){
     return (
       <div>
-      <Navigation/>
         <div className="signup-container">
           <h1 className='register-header'>Register with KickIt</h1>
           <form className="register-container" onSubmit={this.handleSubmit}>

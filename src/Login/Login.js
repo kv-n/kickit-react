@@ -34,6 +34,7 @@ class Login extends Component {
 
     const parsedResponse = await loginResponse.json();
     console.log(this.state)
+    this.props.doSetCurrentUser(parsedResponse)
     this.props.history.push("/shoes");
     console.log(parsedResponse, 'logged')
   }
