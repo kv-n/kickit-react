@@ -73,7 +73,7 @@ html {
     display: inline-block;
     outline: 0;
     border: 0;
-    margin: -1px;
+    margin: 1px;
     border-radius: 2px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -91,6 +91,11 @@ html {
   
   .add {
     width: 67%;
+    margin-bottom: 1rem; 
+  }
+
+  .edit-btn {
+    margin-bottom: 1rem; 
   }
   
   .like {

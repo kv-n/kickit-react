@@ -1,53 +1,69 @@
 import React, { Component } from 'react';   
-import '../Profile/Profile.css'
+import './EditPage.css'
 import { withRouter } from 'react-router-dom'
 
-class Profile extends Component {
+class Edit extends Component {
 
     state = {
-       
+        shoe: {
+            brand: "",
+            name: "",
+            description: "",
+            size: "",
+            price: "",
+            picture: "",
+            created_by: ""
+        }
     }
 
-    // userUpdate = (e) => {
-    //     e.preventDefault()
-    //     axios.put(`${process.env.REACT_APP_API_URL}/users/${this.props.user.id}`, this.state)
-    //         .then(res => {
-    //             (res.status === 200)
-    //                 ? this.props.history.push(`/users/${this.props.user.id}`)
-    //                 : console.log(res.error)
-    //         })
-    // }
+    componentDidMount () {
+        this.getShoes()
+    }
+
+    getShoes = async () => {
+        console.log(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`)
+        try {
+          const shoeResponse = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`)
+          
+          const shoeParsed = await shoeResponse.json()
+          console.log(shoeParsed)
+          this.setState({
+            shoe: shoeParsed
+          })
+    
+        } catch(err) {
+          console.log(err)
+        }
+      }
 
     handleInput = (e) => {
         this.setState({
-            [e.target.name] : e.target.value
+            shoe: {...this.state.shoe, [e.target.name] : e.target.value}
         })
     }
 
     handleSubmit = async (e) => {
         e.preventDefault();
-        const user = JSON.stringify({
-        })
-
-        console.log(this.state)
-        const shoesResponse = await fetch('http://localhost:8000/api/v1/shoes', {
-          method: 'POST',
+        // console.log(`${this.props.match.params.id}`)
+        // console.log(this.state)
+        const shoe = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}/edit`, {
+          method: 'PUT',
           credentials: 'include',
-          body: JSON.stringify(this.state),
+          body: JSON.stringify(this.state.shoe),
           headers:{
             'Content-Type': 'application/json'
             }
         });
-        this.props.history.push("/shoes");
-        console.log(shoesResponse, 'hello')
+        console.log(await shoe.json())
+        // this.props.history.push("/shoes");
     }
     
     render() {
         return(
             <div className="profile-container">
-                <h1 className="profile-header">Add Kicks Here</h1>
+                <h1 className="profile-header">Edit Kicks Here</h1>
                 <form className="Forms-Container" onSubmit={this.handleSubmit}>
-                    <input className="input1" onChange={(e) => this.handleInput(e)} type="text" name="brand" placeholder="Brand" />
+                    <input className="input1" defaultValue={this.state.shoe.brand} onChange={(e) => this.handleInput(e)} type="text" name="brand" placeholder="Brand" />
                     <input className="input2" onChange={(e) => this.handleInput(e)} type="text" name="name" placeholder="Type" />
                     <input className="input2" onChange={(e) => this.handleInput(e)} type="text" name="picture" placeholder="Picture" />
                     <input className="input3" onChange={(e) => this.handleInput(e)} type="text" name="description" placeholder="Description" />
@@ -62,4 +78,4 @@ class Profile extends Component {
 }
 
 
-export default withRouter(Profile) 
+export default withRouter(Edit) 

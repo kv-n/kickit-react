@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Edit from './EditPage/EditPage'
 import './App.css';
 import ShowShoe from './Components/ShowShoe/ShowShoe'
 import ShoeIndex from './Components/ShoeIndex/ShoeIndex'
@@ -92,8 +92,10 @@ class App extends Component {
         <Switch>
           <Route exact path={'/'} component={() => <Splash doSetCurrentUser={this.doSetCurrentUser} />} />
           <Route exact path={'/register'} component={() => <Register handleRegister={this.handleRegister} />} />
+          <Route exact path={'/profile'} component={() => <Profile/>} />
           <Route exact path={'/shoes'} component={() => <ShoeIndex />} />
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
+          <Route exact path={'/shoes/:id/edit'} component={() => <Edit/>} />
         </Switch>
         <div><Link to='/shoes'>hello</Link></div>
       </div>

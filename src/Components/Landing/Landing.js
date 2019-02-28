@@ -1,7 +1,6 @@
 import React from 'react';
 import './Landing.css'
 import Login from '../../Login/Login'
-import Navigation from '../Navigation/Navigation'
 
 const Splash = (props) => {
     return (
