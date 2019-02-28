@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Register.css'
 import { withRouter } from 'react-router-dom'
 
 
@@ -25,22 +26,23 @@ class Register extends Component {
   }
   render(){
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Username:
-          <input type='text' name='username' onChange={this.handleChange}/>
-        </label>
-        <label>
-          email:
-          <input type='email' name='email' onChange={this.handleChange}/>
-        </label>
-        <label>
-          password:
-          <input type='password' name='password' onChange={this.handleChange}/>
-        </label>
-        <button type='submit'>Register</button>
-      </form>
-
+      <div>
+        <div className="signup-container">
+          <h1 className='register-header'>Register with KickIt</h1>
+          <form className="register-container" onSubmit={this.handleSubmit}>
+            <label>
+              <input className="register-input1" type='text' name='username' placeholder="username" onChange={this.handleChange}/>
+            </label>
+            <label>
+              <input className="register-input2" type='email' name='email' placeholder="email" onChange={this.handleChange}/>
+            </label>
+            <label>
+              <input className="register-input3" type='password' name='password' placeholder="password" onChange={this.handleChange}/>
+            </label>
+            <button className="register-btn" type='submit'>Register</button>
+          </form>
+        </div>
+      </div>
       )
   }
 }

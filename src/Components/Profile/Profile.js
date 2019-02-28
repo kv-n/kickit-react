@@ -27,7 +27,6 @@ class Profile extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
-        this.props.history.push("/shoes");
         const user = JSON.stringify({
         })
 
@@ -40,7 +39,7 @@ class Profile extends Component {
             'Content-Type': 'application/json'
             }
         });
-
+        this.props.history.push("/shoes");
         console.log(shoesResponse, 'hello')
     }
     
@@ -56,7 +55,7 @@ class Profile extends Component {
                     <input className="input3" onChange={(e) => this.handleInput(e)} type="text" name="description" placeholder="Description" />
                     <input className="input4" onChange={(e) => this.handleInput(e)} type="text" name="size" placeholder="Size" />
                     <input className="input5" onChange={(e) => this.handleInput(e)} type="text" name="price" placeholder="Price" />
-                    <input className="input5" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" />
+                    <input className="input6" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" />
                     <button type="submit" className="profile-btn">Kickit</button>
                 </form>
             </div>
