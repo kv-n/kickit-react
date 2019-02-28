@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ShoeCard from '../ShoeCard/ShoeCard'
+import Navigation from '../Navigation/Navigation'
 import './ShoeIndex.css'
 
 class ShoesIndex extends Component {
@@ -26,6 +27,7 @@ class ShoesIndex extends Component {
         console.log(this.state)
         return (
             <div>
+                <Navigation/>
                 <h1 className="shoe-index-header">KickIt</h1>
                 <div className="index-flex">
                     {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navigation from '../Navigation/Navigation'
 import '../Profile/Profile.css'
 import { withRouter } from 'react-router-dom'
 
@@ -45,6 +46,7 @@ class Profile extends Component {
     render() {
         return(
             <div className="profile-container">
+                <Navigation/>
                 <h1 className="profile-header">Add Kicks Here</h1>
                 <form className="Forms-Container" onSubmit={this.handleSubmit}>
                     <input className="input1" onChange={(e) => this.handleInput(e)} type="text" name="brand" placeholder="Brand" />
@@ -53,7 +55,7 @@ class Profile extends Component {
                     <input className="input3" onChange={(e) => this.handleInput(e)} type="text" name="description" placeholder="Description" />
                     <input className="input4" onChange={(e) => this.handleInput(e)} type="text" name="size" placeholder="Size" />
                     <input className="input5" onChange={(e) => this.handleInput(e)} type="text" name="price" placeholder="Price" />
-                    <input className="input5" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" />
+                    <input className="input6" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" />
                     <button type="submit" className="profile-btn">Kickit</button>
                 </form>
             </div>
