@@ -1,44 +1,46 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
-
-class LogOut extends Component {
-
-    handleSubmit = async () => {
-
-        
+    
+class Userlogout extends Component {
+    
+    handleLogout = async () => {
         try {
-            const response = await fetch('http://localhost:8000/api/v1/users/logout')
-            if (!response.ok) {
-                throw Error(response.statusText)
-            } else {
-                console.log(response)
-            }
-            const deletedSession = await response.json();
+            const loginResponse = await fetch('http://localhost:8000/api/v1/users/logout', {
+                method: 'GET',
+                credentials: 'include',
+                // body: JSON.stringify(this.state),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const parsedResponse = await loginResponse.json();
+            console.log(this.state)
+            this.props.history.push("/");
             this.setState({
-                user: deletedSession.user || {}
+                users: {}
             })
-            this.props.history.push('/')
+            console.log(parsedResponse, 'logged')
 
         } catch (err) {
-
+            console.log(err)
         }
-
     }
 
 
-
     render() {
-        return(
+        return (
             <div>
-                {/* <button onClick={this.handleSubmit}>Log Out</button> */}
+                <button onClick={this.handleLogout}>Logout</button>
             </div>
+
         )
     }
 }
 
-
-export default LogOut
+export default withRouter(Userlogout);
+    
 
 
 
