@@ -7,7 +7,6 @@ const Splash = (props) => {
         <div className="splash-container">
         <div className="splash">
             <h1>//Kickit.</h1>
-            <Login doSetCurrentUser={props.doSetCurrentUser} />
             <video id="bgvid" style={{ width: '100%' }}
                 src="/kickit.mp4"
                 loop

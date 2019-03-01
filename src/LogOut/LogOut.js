@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 
     
 class Userlogout extends Component {
@@ -28,9 +28,7 @@ class Userlogout extends Component {
 
     render() {
         return (
-            <div>
-                <button onClick={this.handleLogout}>Logout</button>
-            </div>
+                <Link className = "logout-btn" to='/' onClick={this.handleLogout}>Logout</Link>
 
         )
     }
