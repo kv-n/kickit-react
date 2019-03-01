@@ -1,6 +1,7 @@
 import React from 'react';
 import './Landing.css'
 import { Link } from 'react-router-dom'
+import ReactAudioPlayer from 'react-audio-player'
 
 const Splash = (props) => {
     return (
@@ -12,6 +13,8 @@ const Splash = (props) => {
                 loop
                 autoPlay
                 muted />
+                <ReactAudioPlayer className="Audio" src="/canikickit.mp3" 
+                autoPlay={true}/>
         </div>
         </div>
     )
