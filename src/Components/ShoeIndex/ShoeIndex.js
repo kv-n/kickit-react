@@ -27,7 +27,7 @@ class ShoesIndex extends Component {
         return (
             <div>
             <div className="shoe-index-container">
-                <h1 className="shoe-index-header">KickIt</h1>
+                <h1 className="shoe-index-header">Kick.it</h1>
                 <div className="index-flex">
                     {
                         this.state.shoes.map((shoe, i) => 

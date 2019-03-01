@@ -1,140 +1,140 @@
 html {
-    display: grid;
-    min-height: 100%;
-  }
-  
-  body {
-    display: grid;
-    background: #E0C9CB;
-    font-family: "Lato", sans-serif, sans-serif;
-    text-transform: uppercase;
-  }
-  
-  .ShoeCard-Container {
-    position: relative;
-    margin: auto;
-    margin-bottom: 3rem; 
-    overflow: hidden;
-    width: 37rem;
-    height: 21rem;
-    background: #F5F5F5;
-    box-shadow: .5rem .5rem 1.5rem rgba(186, 126, 126, 0.5);
-    border-radius: 10px;
-  }
-  
-  .desc {
-    font-size: 0.6em;
-    color: #BA7E7E;
-    letter-spacing: 1px;
-  }
-  
-  .brand-name, .name-type {
-    font-size: 1.2em;
-    color: #4E4E4E;
-    margin-top: -5px;
-  }
-  
-  .size, .price {
-    color: #C3A1A0;
-    margin-top: -5px;
-  }
+  display: grid;
+  min-height: 100%;
+}
 
-  
-  .product {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    top: 19%;
-    left: 60%;
-  }
-  
-  .desc {
-    text-transform: none;
-    letter-spacing: 0;
-    margin-bottom: 17px;
-    color: #4E4E4E;
-    font-size: .7em;
-    line-height: 1.6em;
-    margin-right: 25px;
-    text-align: justify;
-  }
-  
-  .add, .like {
-    background: #cda9ac;
-    padding: 10px;
-    display: inline-block;
-    outline: 0;
-    border: 0;
-    margin: 1px;
-    border-radius: 2px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #F5F5F5;
-    cursor: pointer;
-  }
-  .add:hover {
-    background: #BA7E7E;
-    transition: all .4s ease-in-out;
-  }
-  .like:hover {
-    background: #BA7E7E;
-    transition: all .4s ease-in-out;
-  }
-  
-  .add {
-    width: 67%;
-    margin-bottom: 1rem; 
-  }
+body {
+  display: grid;
+  background: #E0C9CB;
+  font-family: "Lato", sans-serif, sans-serif;
+  text-transform: uppercase;
+}
 
-  .edit-btn {
-    margin-bottom: 1rem; 
-  }
-  
-  .like {
-    width: 22%;
-  }
-  
-  .pick {
-    margin-top: 11px;
-    margin-bottom: 0;
-    margin-left: 20px;
-  }
-  
-  .size {
-    padding: 9px;
-    border: 1px solid #E0C9CB;
-    margin-right: 3rem; 
-    font-size: 0.7em;
-    text-align: center;
-  }
-  .size:hover {
-    background: #BA7E7E;
-    color: #F5F5F5;
-    transition: all .4s ease-in-out;
-  }
-  
-  .focus {
-    background: #BA7E7E;
-    color: #F5F5F5;
-  }
+.ShoeCard-Container {
+  position: relative;
+  margin: auto;
+  margin-bottom: 3rem; 
+  overflow: hidden;
+  width: 37rem;
+  height: 21rem;
+  background: #F5F5F5;
+  box-shadow: .5rem .5rem 1.5rem rgba(186, 126, 126, 0.5);
+  border-radius: 10px;
+}
 
-  .show-shoe {
-    width: 290px;
-    margin-top: 47px;
-    border-radius: 2rem; 
-    margin-top: 4rem; 
-    margin-left: 1.5rem; 
-  }
+.desc {
+  font-size: 0.6em;
+  color: #BA7E7E;
+  letter-spacing: 1px;
+}
 
-  .show-edit-btn {
-    padding: .5rem; 
-    border-radius: .5rem; 
-  }
+.brand-name, .name-type {
+  font-size: 1.2em;
+  color: #4E4E4E;
+  margin-top: -5px;
+}
 
-  a {
-    color: #000; 
-  }
-  a:visited {
-    color: #000; 
-  }
-  
+.size, .price {
+  color: #C3A1A0;
+  margin-top: -5px;
+}
+
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 9%;
+  left: 60%;
+}
+
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color: #4E4E4E;
+  font-size: .7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.add, .like {
+  background: #cda9ac;
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: 1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #F5F5F5;
+  cursor: pointer;
+}
+.add:hover {
+  background: #BA7E7E;
+  transition: all .4s ease-in-out;
+}
+.like:hover {
+  background: #BA7E7E;
+  transition: all .4s ease-in-out;
+}
+
+.add {
+  width: 67%;
+  margin-bottom: 1rem; 
+}
+
+.edit-btn {
+  margin-bottom: 1rem; 
+}
+
+.like {
+  width: 22%;
+}
+
+.pick {
+  margin-top: 11px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.size {
+  padding: 9px;
+  border: 1px solid #E0C9CB;
+  margin-right: 3rem; 
+  font-size: 0.7em;
+  text-align: center;
+}
+.size:hover {
+  background: #BA7E7E;
+  color: #F5F5F5;
+  transition: all .4s ease-in-out;
+}
+
+.focus {
+  background: #BA7E7E;
+  color: #F5F5F5;
+}
+
+.show-shoe {
+  width: 290px;
+  margin-top: 47px;
+  border-radius: 2rem; 
+  margin-top: 4rem; 
+  margin-left: 1.5rem; 
+}
+
+.show-edit-btn {
+  padding: .5rem; 
+  border-radius: .5rem; 
+}
+
+a {
+  color: #000; 
+}
+a:visited {
+  color: #000; 
+}
+
