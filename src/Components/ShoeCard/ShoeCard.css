@@ -117,4 +117,12 @@ html {
     background: #BA7E7E;
     color: #F5F5F5;
   }
+
+  .show-shoe {
+    width: 290px;
+    margin-top: 47px;
+    border-radius: 2rem; 
+    margin-top: 4rem; 
+    margin-left: 1.5rem; 
+  }
   

@@ -25,7 +25,7 @@ class ShoesIndex extends Component {
     render() {
         console.log(this.state)
         return (
-            <div>
+            <div className="shoe-index-container">
                 <h1 className="shoe-index-header">KickIt</h1>
                 <div className="index-flex">
                     {
