@@ -28,7 +28,7 @@
     height: 3rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
-    background-color: #C6232C; 
+    background-color: #BA7E7E; 
     color: #fff; 
     padding: 1rem; 
     outline: none; 
@@ -36,6 +36,7 @@
 }
 
 .profile-btn:hover {
+    background-color: #CCA9AC; 
     transform: translateY(-.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
