@@ -1,6 +1,7 @@
 import React, { Component } from 'react';   
 import '../Profile/Profile.css'
 import { withRouter } from 'react-router-dom'
+import mp3_file from './kickit.mp3'
 
 class Profile extends Component {
 
@@ -58,7 +59,7 @@ class Profile extends Component {
                     <input className="input4"  onChange={this.handleInput.bind(this)} type="text" name="size" placeholder="Size" value={size}/>
                     <input className="input5"  onChange={this.handleInput.bind(this)} type="text" name="price" placeholder="Price" value={price}/>
                     {/* <input className="input6" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" value={created_by}/> */}
-                    <button type="submit" className="profile-btn">Kickit</button>
+                    <button type="submit" onClick={() => new Audio(mp3_file).play()} className="profile-btn">Kickit</button>
                 </form>
             </div>
         )

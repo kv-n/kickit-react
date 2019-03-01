@@ -29,18 +29,24 @@
 }
 
 .edit-btn {
-    width: 10rem; 
+    width: 8rem; 
+    margin-left: .3rem; 
     height: 3rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
-    background-color: #C6232C; 
+    background-color: #BA7E7E; 
     color: #fff; 
     padding: 1rem; 
     outline: none; 
     font-size: 1rem; 
 }
 
+.edit-btn-flex {
+    display: flex; 
+}
+
 .edit-btn:hover {
+    background-color: #CCA9AC; 
     transform: translateY(-.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -52,6 +58,8 @@
     font-size: 3rem;
     color: #fff; 
     text-align: center; 
+    font-family: 'Lobster', cursive;
+    text-transform: none; 
 }
 
 .edit-input1 {

@@ -5,7 +5,7 @@
     align-items: center; 
     height: 100vh; 
 }
-
+ 
 .register-container input {
     width: 15rem; 
     height: 1rem; 
@@ -25,6 +25,8 @@
     color: #fff; 
     text-align: center; 
     font-size: 3rem; 
+    font-family: 'Lobster', cursive;
+    text-transform: none; 
 }
 
 .register-btn {
@@ -32,7 +34,7 @@
     height: 3rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
-    background-color: #C6232C; 
+    background-color: #BA7E7E; 
     color: #fff; 
     padding: 1rem; 
     outline: none; 
@@ -40,6 +42,7 @@
 }
 
 .register-btn:hover {
+    background-color: #CCA9AC; 
     transform: translateY(-.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 

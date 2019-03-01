@@ -21,6 +21,8 @@ body {
 .login-header {
     font-size: 3rem; 
     color: #fff; 
+    font-family: 'Lobster', cursive;
+    text-transform: none; 
 }
 
 .login-input {
@@ -47,11 +49,15 @@ body {
     height: 3rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
-    background-color: #C6232C; 
+    background-color: #BA7E7E; 
     color: #fff; 
     padding: 1rem; 
     outline: none; 
     font-size: 1rem; 
+}
+
+.login-btn:hover {
+    background-color: #CCA9AC; 
 }
 
 
