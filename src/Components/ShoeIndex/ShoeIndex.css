@@ -1,10 +1,18 @@
 .shoe-index-header {
     color: #fff; 
     text-align: center; 
-    font-size: 4rem; 
+    font-size: 3rem; 
+    margin-top: 0; 
 }
 
 .index-flex {
     display: flex; 
+    justify-content: center; 
+    align-items: center; 
     flex-wrap: wrap; 
+}
+
+.shoe-index-container {
+    height: 100vh; 
+    padding-top: 5rem; 
 }

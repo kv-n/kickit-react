@@ -26,6 +26,7 @@ class ShoesIndex extends Component {
         console.log(this.props.currentUser)
         return (
             <div>
+            <div className="shoe-index-container">
                 <h1 className="shoe-index-header">KickIt</h1>
                 <div className="index-flex">
                     {
@@ -34,6 +35,7 @@ class ShoesIndex extends Component {
                         )
                     } 
                 </div>
+            </div>
             </div>
         )
     }

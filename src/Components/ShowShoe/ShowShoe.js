@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ShoeCard from '../ShoeCard/ShoeCard'
 import { withRouter } from 'react-router-dom'
 import './ShowShoe.css'
 

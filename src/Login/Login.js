@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Login.css'
 import { withRouter } from 'react-router-dom'
+import Footer from '../Components/Footer/Footer'
 
 
 class Login extends Component {
@@ -64,6 +65,7 @@ class Login extends Component {
   render(){
     const { username, email, password } = this.state.fields
     return (
+      <div>
       <div className="login-container">
         <h1>{this.state.message}</h1>
         <form className="login-flex" onSubmit={this.handleSubmit}>
@@ -79,7 +81,8 @@ class Login extends Component {
             </label>
           <button className="login-btn" type='submit'>Login</button>
         </form>
-      </div>
+        </div>  
+        </div>
       )
   }
 }

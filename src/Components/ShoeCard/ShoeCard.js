@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const ShoeCard = (props) =>
     <div className="ShoeCard-Container">
       <div className="images">
-        <img src={props.shoe.picture} alt="shoes" />
+        <img className="show-shoe" src={props.shoe.picture} alt="shoes" />
       </div>
       <div className="product">
         <h1 className="brand-name">{props.shoe.brand}</h1>
