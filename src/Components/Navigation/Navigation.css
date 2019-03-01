@@ -1,14 +1,17 @@
 .nav-container {
-    top:0;
-    background-color: #C6232C; 
+    background-color: rgba(255, 255, 255, 0); 
     margin-top: 0rem; 
     padding: .1rem; 
     width: 100%; 
-    position:absolute;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.nav-container a {
+a {
     text-decoration: none; 
+    margin: 0;
 }
 
 .nav-container a:visited {
@@ -18,15 +21,14 @@
 .logo-nav {
     height: 2rem; 
     width: 2rem; 
-    margin-top: -.6rem; 
-    margin-right: 1rem; 
-    margin-bottom: 0rem; 
+    display: flex;
+    padding-left: 1rem;
 }
 
 .nav-flex {
     display: flex; 
-    justify-content: flex-end;
-    margin-right: 2rem; 
+    width:100%;
+    flex-direction: row-reverse;
 }
 
 .nav-list {
