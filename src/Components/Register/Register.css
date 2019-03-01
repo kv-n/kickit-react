@@ -1,42 +1,37 @@
-.signup-container {
-    margin-top: 5rem; 
-}
-
 .register-container {
     display: flex; 
     flex-direction: column; 
-    margin-left: 28.5rem; 
-    margin-top: 2rem; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 .register-container input {
-    width: 30rem; 
-    height: 1.5rem; 
+    width: 15rem; 
+    height: 1rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
-    padding: 1rem; 
+    padding: .5rem; 
     outline: none; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 }
 
 .register-header {
     color: #fff; 
     text-align: center; 
-    font-size: 2rem; 
-    margin-bottom: 2rem; 
+    font-size: 3rem; 
 }
 
 .register-btn {
-    width: 20rem; 
-    height: 3.7rem; 
+    width: 10rem; 
+    height: 3rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
     background-color: #C6232C; 
     color: #fff; 
     padding: 1rem; 
     outline: none; 
-    font-size: 1.5rem; 
-    margin-left: 5.8rem; 
+    font-size: 1rem; 
 }
 
 .register-btn:hover {

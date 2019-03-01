@@ -1,31 +1,38 @@
+.profile-container {
+    height: 100vh; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
 .Forms-Container {
     display: flex; 
     flex-direction: column; 
-    margin-left: 22rem; 
+    justify-content: center; 
+    align-items: center; 
     padding: 2rem; 
 }
 
 .Forms-Container input {
-    width: 40rem; 
-    height: 1.5rem; 
+    width: 15rem; 
+    height: 1rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
-    padding: 1rem; 
+    padding: .5rem; 
     outline: none; 
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 }
 
 .profile-btn {
-    width: 20rem; 
-    height: 5rem; 
+    width: 10rem; 
+    height: 3rem; 
     border: 0rem solid #fff; 
     border-radius: .5rem; 
     background-color: #C6232C; 
     color: #fff; 
     padding: 1rem; 
     outline: none; 
-    font-size: 2rem; 
-    margin-left: 11rem; 
+    font-size: 1rem; 
 }
 
 .profile-btn:hover {
@@ -37,10 +44,9 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .profile-header {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff; 
     text-align: center; 
-    margin-bottom: 0; 
 }
 
 .input1 {

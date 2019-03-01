@@ -30,8 +30,8 @@ class Register extends Component {
     return (
       <div>
         <div className="signup-container">
-          <h1 className='register-header'>Register with KickIt</h1>
           <form className="register-container" onSubmit={this.handleSubmit}>
+          <h1 className='register-header'>Register</h1>
             <label>
               <input className="register-input1" type='text' name='username' placeholder="username" onChange={this.handleChange} />
             </label>

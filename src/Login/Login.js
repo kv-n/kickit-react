@@ -36,24 +36,27 @@ class Login extends Component {
     console.log(this.state)
     this.props.doSetCurrentUser(parsedResponse)
     this.props.history.push("/shoes");
-    console.log('login successful')
+    console.log(parsedResponse, 'logged')
   }
 
 
   render(){
     return (
-      <form onSubmit={this.handleSubmit}>
-          <label>
-            <input id="login1" className="login-input" type='text' name='username' onChange={this.handleChange}/>
-          </label>
-          <label>
-            <input id="login2" className="login-input" type='email' name='email' onChange={this.handleChange}/>
-          </label>
-          <label>
-            <input id="login3" className="login-input" type='password' name='password' onChange={this.handleChange}/>
-          </label>
-        <button className="login-btn" type='submit'>Login</button>
-      </form>
+      <div className="login-container">
+        <form className="login-flex" onSubmit={this.handleSubmit}>
+        <h1 className="login-header">Log in</h1>
+            <label>
+              <input id="login1" className="login-input" type='text' name='username' placeholder="username" onChange={this.handleChange}/>
+            </label>
+            <label>
+              <input id="login2" className="login-input" type='email' name='email' placeholder="email" onChange={this.handleChange}/>
+            </label>
+            <label>
+              <input id="login3" className="login-input" type='password' name='password' placeholder="password" onChange={this.handleChange}/>
+            </label>
+          <button className="login-btn" type='submit'>Login</button>
+        </form>
+      </div>
       )
   }
 }

@@ -1,3 +1,22 @@
+.login-container{
+    display: flex; 
+    height:100vh;
+    justify-content: center; 
+    align-items: center;
+}
+
+.login-flex {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.login-header {
+    font-size: 3rem; 
+    color: #fff; 
+}
+
 .login-input {
     width: 15rem; 
     height: 1rem; 
@@ -18,19 +37,18 @@
     padding: 1rem; 
     outline: none; 
     font-size: 1rem; 
-    margin-left: 1rem; 
 }
 
 
 
-#login1 {
-    margin-left: 1rem;     
+#login1 {   
+    margin-bottom: 1rem;   
 }
 
-#login2 {
-    margin-left: 1rem; 
+#login2 { 
+    margin-bottom: 1rem;   
 }
 
-#login3 {
-    margin-left: 1rem; 
+#login3 { 
+    margin-bottom: 2rem;   
 }
