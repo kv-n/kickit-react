@@ -16,6 +16,7 @@ class App extends Component {
     currentUser: {}
   }
 
+
   doSetCurrentUser = (currentUser) => {
     console.log(currentUser)
     this.setState({ currentUser })
@@ -34,6 +35,9 @@ class App extends Component {
 
       const registerParsed = await registerResponse.json()
       console.log(registerParsed)
+      delete registerParsed.password 
+      this.props.history.push("/shoes");
+      this.doSetCurrentUser(registerParsed);
 
     } catch (err) {
       console.log(err)
@@ -54,9 +58,9 @@ class App extends Component {
         />
         <Switch>
           <Route exact path={'/'} component={() => <Splash doSetCurrentUser={this.doSetCurrentUser} />} />
-          <Route exact path={'/register'} component={() => <Register handleRegister={this.handleRegister} />} />
-          <Route exact path={'/profile'} component={() => <Profile/>} />
-          <Route exact path={'/shoes'} component={() => <ShoeIndex />} />
+          <Route exact path={'/register'} component={() => <Register handleRegister={this.handleRegister} doSetCurrentUser={this.doSetCurrentUser} />} />
+          <Route exact path={'/profile'} component={() => <Profile currentUser={this.state.currentUser}/>} />
+          <Route exact path={'/shoes'} component={() => <ShoeIndex currentUser={this.state.currentUser}/>} />
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
           <Route exact path={'/shoes/:id/edit'} component={() => <Edit/>} />
           <Route exact path={'/login'} component={() => <Login doSetCurrentUser={this.doSetCurrentUser}/>} />
