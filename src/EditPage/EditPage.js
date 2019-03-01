@@ -79,11 +79,11 @@ class Edit extends Component {
                 <form className="edit-Forms-Container" onSubmit={this.handleSubmit}>
                 <h1 className="edit-header">Edit Kicks Here</h1>
                     <input className="edit-input1" defaultValue={this.state.shoe.brand} onChange={(e) => this.handleInput(e)} type="text" name="brand" placeholder="Brand" />
-                    <input className="edit-input2" onChange={(e) => this.handleInput(e)} type="text" name="name" placeholder="Type" />
-                    <input className="edit-input3" onChange={(e) => this.handleInput(e)} type="text" name="picture" placeholder="Picture" />
-                    <input className="edit-input4" onChange={(e) => this.handleInput(e)} type="text" name="description" placeholder="Description" />
-                    <input className="edit-input5" onChange={(e) => this.handleInput(e)} type="text" name="size" placeholder="Size" />
-                    <input className="edit-input6" onChange={(e) => this.handleInput(e)} type="text" name="price" placeholder="Price" />
+                    <input className="edit-input2" defaultValue={this.state.shoe.name} onChange={(e) => this.handleInput(e)} type="text" name="name" placeholder="Type" />
+                    <input className="edit-input3" defaultValue={this.state.shoe.picture} onChange={(e) => this.handleInput(e)} type="text" name="picture" placeholder="Picture" />
+                    <input className="edit-input4" defaultValue={this.state.shoe.description} onChange={(e) => this.handleInput(e)} type="text" name="description" placeholder="Description" />
+                    <input className="edit-input5" defaultValue={this.state.shoe.size} onChange={(e) => this.handleInput(e)} type="text" name="size" placeholder="Size" />
+                    <input className="edit-input6" defaultValue={this.state.shoe.price} onChange={(e) => this.handleInput(e)} type="text" name="price" placeholder="Price" />
                     <button type="submit" className="edit-btn">Kickit</button>
                     <button type="submit" className="edit-btn" onClick={(e) => this.handleDelete(e)}>Delete</button>
                 </form>
