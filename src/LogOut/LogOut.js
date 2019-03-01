@@ -36,11 +36,3 @@ class Userlogout extends Component {
 }
 
 export default withRouter(Userlogout);
-    
-
-
-
-
-
-
-

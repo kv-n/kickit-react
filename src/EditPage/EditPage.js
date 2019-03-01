@@ -24,7 +24,6 @@ class Edit extends Component {
         console.log(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`)
         try {
           const shoeResponse = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`)
-          
           const shoeParsed = await shoeResponse.json()
           console.log(shoeParsed)
           this.setState({
@@ -33,7 +32,7 @@ class Edit extends Component {
     
         } catch(err) {
           console.log(err)
-          console.log('hello')
+          console.log('IS THIS WORKING')
         }
       }
 
