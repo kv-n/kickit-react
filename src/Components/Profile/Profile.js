@@ -9,16 +9,6 @@ class Profile extends Component {
        
     }
 
-    // userUpdate = (e) => {
-    //     e.preventDefault()
-    //     axios.put(`${process.env.REACT_APP_API_URL}/users/${this.props.user.id}`, this.state)
-    //         .then(res => {
-    //             (res.status === 200)
-    //                 ? this.props.history.push(`/users/${this.props.user.id}`)
-    //                 : console.log(res.error)
-    //         })
-    // }
-
     handleInput = (e) => {
         this.setState({
             [e.target.name] : e.target.value
@@ -46,8 +36,8 @@ class Profile extends Component {
     render() {
         return(
             <div className="profile-container">
-                <h1 className="profile-header">Add Kicks Here</h1>
                 <form className="Forms-Container" onSubmit={this.handleSubmit}>
+                <h1 className="profile-header">Add Kicks Here</h1>
                     <input className="input1" onChange={(e) => this.handleInput(e)} type="text" name="brand" placeholder="Brand" />
                     <input className="input2" onChange={(e) => this.handleInput(e)} type="text" name="name" placeholder="Type" />
                     <input className="input2" onChange={(e) => this.handleInput(e)} type="text" name="picture" placeholder="Picture" />

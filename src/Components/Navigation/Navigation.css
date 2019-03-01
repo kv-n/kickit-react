@@ -1,8 +1,10 @@
 .nav-container {
+    top:0;
     background-color: #C6232C; 
     margin-top: 0rem; 
     padding: .1rem; 
     width: 100%; 
+    position:absolute;
 }
 
 .nav-container a {
