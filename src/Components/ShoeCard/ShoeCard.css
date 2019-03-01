@@ -131,6 +131,9 @@ html {
     border-radius: .5rem; 
   }
 
+  a {
+    color: #000; 
+  }
   a:visited {
     color: #000; 
   }
