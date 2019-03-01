@@ -29,7 +29,7 @@ class Userlogout extends Component {
 
     render() {
         return (
-                <Link className = "logout-btn" to='/' onClick={this.handleLogout}>Logout</Link>
+                <Link className = "logout-btn" to='/' onClick={this.handleLogout}>//Logout</Link>
 
         )
     }
