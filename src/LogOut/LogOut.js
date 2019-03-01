@@ -22,6 +22,7 @@ class Userlogout extends Component {
 
         } catch (err) {
             console.log(err)
+            console.log('hittting')
         }
     }
 
