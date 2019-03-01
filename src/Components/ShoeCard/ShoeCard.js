@@ -12,7 +12,7 @@ const ShoeCard = (props) =>
         <h1 className="name-type">{props.shoe.name}</h1>
         <h2 className="size">Size: {props.shoe.size}</h2>
         <h2 className="price">${props.shoe.price}</h2>
-        <p className="desc">{props.shoe.description}</p>
+        <h4 className="name-type posted">{props.shoe.description}</h4>
         <div className="buttons">
         <button className="add">Add to Cart</button>
         <button className="like"><span>♥</span></button>
@@ -20,7 +20,7 @@ const ShoeCard = (props) =>
         {props.currentUser.id === props.shoe.created_by
         ?
         ( <div className='edit-button'>
-          <button className="add"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
+        <Link to={`/shoes/${props.shoe.id}/edit`}><button className="add">EDIT</button></Link>
           </div>
         )
         :

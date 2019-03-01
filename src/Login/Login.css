@@ -26,11 +26,20 @@ body {
 .login-input {
     width: 15rem; 
     height: 1rem; 
-    border: 0rem solid #fff; 
-    border-radius: .5rem; 
+    /* border: 0rem solid #fff;  */
+    border:none;
+    background-color:black;
+    /* border-radius: .5rem;  */
     padding: .5rem; 
     outline: none; 
     font-size: 1rem; 
+    color:white;
+    border-bottom: .05rem solid white;
+    transition: all .2s
+}
+
+.login-input:focus{
+    border-bottom: .1rem solid white;
 }
 
 .login-btn {
