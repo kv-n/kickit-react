@@ -84,8 +84,10 @@ class Edit extends Component {
                     <input className="edit-input4" defaultValue={this.state.shoe.description} onChange={(e) => this.handleInput(e)} type="text" name="description" placeholder="Description" />
                     <input className="edit-input5" defaultValue={this.state.shoe.size} onChange={(e) => this.handleInput(e)} type="text" name="size" placeholder="Size" />
                     <input className="edit-input6" defaultValue={this.state.shoe.price} onChange={(e) => this.handleInput(e)} type="text" name="price" placeholder="Price" />
-                    <button type="submit" className="edit-btn">Kickit</button>
-                    <button type="submit" className="edit-btn" onClick={(e) => this.handleDelete(e)}>Delete</button>
+                    <div className="edit-btn-flex">
+                        <button type="submit" className="edit-btn">Kickit</button>
+                        <button type="submit" className="edit-btn" onClick={(e) => this.handleDelete(e)}>Delete</button>
+                    </div>
                 </form>
             </div>
         )

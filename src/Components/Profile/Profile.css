@@ -46,7 +46,9 @@
 .profile-header {
     font-size: 3rem;
     color: #fff; 
-    text-align: center; 
+    text-align: center;
+    font-family: 'Lobster', cursive;
+     
 }
 
 .input1 {
