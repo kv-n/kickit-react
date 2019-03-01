@@ -1,3 +1,9 @@
+body {
+    background: url('/kickit-login.png');
+    /* background-size: 80%; */
+    background-size: cover;
+}
+
 .login-container{
     display: flex; 
     height:100vh;

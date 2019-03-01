@@ -8,11 +8,15 @@ const Splash = (props) => {
         <div className="splash-container">
         <div className="splash">
             <Link to="/shoes"><h1>//Kickit.</h1></Link>
+
+            
             <video id="bgvid" style={{ width: '100%' }}
                 src="/kickit.mp4"
                 loop
                 autoPlay
                 muted />
+
+
                 <ReactAudioPlayer className="Audio" src="/canikickit.mp3" 
                 autoPlay={true}/>
         </div>

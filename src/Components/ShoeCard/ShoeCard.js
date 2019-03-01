@@ -16,7 +16,7 @@ const ShoeCard = (props) =>
         <div className="buttons">
         <button className="add">Add to Cart</button>
         <button className="like"><span>♥</span></button>
-        <div> posted by: {props.shoe.user}</div>
+        <h6 className="name-type posted"> posted by: {props.shoe.user}</h6>
         {props.currentUser.id === props.shoe.created_by
         ?
         ( <div className='edit-button'>
