@@ -34,13 +34,13 @@ class Register extends Component {
           <form className="register-container" onSubmit={this.handleSubmit}>
           <h1 className='register-header'>Register</h1>
             <label>
-              <input className="register-input1" type='text' name='username' placeholder="username" onChange={this.handleChange} value={username}/>
+              <input className="register-input1" type='text' name='username' placeholder="username" onChange={this.handleChange} value={username} autoComplete="off"/>
             </label>
             <label>
-              <input className="register-input2" type='email' name='email' placeholder="email" onChange={this.handleChange} value={email}/>
+              <input className="register-input2" type='email' name='email' placeholder="email" onChange={this.handleChange} value={email} autoComplete="off"/>
             </label>
             <label>
-              <input className="register-input3" type='password' name='password' placeholder="password" onChange={this.handleChange} value={password}/>
+              <input className="register-input3" type='password' name='password' placeholder="password" onChange={this.handleChange} value={password} autoComplete="off"/>
             </label>
             <button className="register-btn" type='submit'>Register</button>
           </form>

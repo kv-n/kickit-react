@@ -52,12 +52,12 @@ class Profile extends Component {
             <div className="profile-container">
                 <form className="Forms-Container" onSubmit={this.handleSubmit}>
                 <h1 className="profile-header">Add Kicks Here</h1>
-                    <input className="input1" onChange={this.handleInput.bind(this)} type="text" name="brand" placeholder="Brand" value={brand}/>
-                    <input className="input2"  onChange={this.handleInput.bind(this)} type="text" name="name" placeholder="Type" value={name} />
-                    <input className="input2" onChange={this.handleInput.bind(this)} type="text" name="picture" placeholder="Picture" value={picture}/>
-                    <input className="input3"  onChange={this.handleInput.bind(this)} type="text" name="description" placeholder="Description" value={description}/>
-                    <input className="input4"  onChange={this.handleInput.bind(this)} type="text" name="size" placeholder="Size" value={size}/>
-                    <input className="input5"  onChange={this.handleInput.bind(this)} type="text" name="price" placeholder="Price" value={price}/>
+                    <input className="input1" onChange={this.handleInput.bind(this)} type="text" name="brand" placeholder="Brand" value={brand} autoComplete="off"/>
+                    <input className="input2"  onChange={this.handleInput.bind(this)} type="text" name="name" placeholder="Type" value={name} autoComplete="off"/>
+                    <input className="input2" onChange={this.handleInput.bind(this)} type="text" name="picture" placeholder="Picture" value={picture} autoComplete="off"/>
+                    <input className="input3"  onChange={this.handleInput.bind(this)} type="text" name="description" placeholder="Description" value={description} autoComplete="off"/>
+                    <input className="input4"  onChange={this.handleInput.bind(this)} type="text" name="size" placeholder="Size" value={size} autoComplete="off"/>
+                    <input className="input5"  onChange={this.handleInput.bind(this)} type="text" name="price" placeholder="Price" value={price} autoComplete="off"/>
                     {/* <input className="input6" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" value={created_by}/> */}
                     <button type="submit" onClick={() => new Audio(mp3_file).play()} className="profile-btn">Kickit</button>
                 </form>

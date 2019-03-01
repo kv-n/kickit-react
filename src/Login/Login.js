@@ -71,13 +71,13 @@ class Login extends Component {
         <form className="login-flex" onSubmit={this.handleSubmit}>
         <h1 className="login-header">Log in</h1>
             <label>
-              <input id="login1" className="login-input" type='text' name='username' placeholder="username" onChange={this.handleChange} value={username}/>
+              <input id="login1" className="login-input" type='text' name='username' placeholder="username" onChange={this.handleChange} value={username} autoComplete="off"/>
             </label>
             <label>
-              <input id="login2" className="login-input" type='email' name='email' placeholder="email" onChange={this.handleChange} value={email}/>
+              <input id="login2" className="login-input" type='email' name='email' placeholder="email" onChange={this.handleChange} value={email} autoComplete="off"/>
             </label>
             <label>
-              <input id="login3" className="login-input" type='password' name='password' placeholder="password" onChange={this.handleChange} value={password}/>
+              <input id="login3" className="login-input" type='password' name='password' placeholder="password" onChange={this.handleChange} value={password} autoComplete="off"/>
             </label>
           <button className="login-btn" type='submit'>Login</button>
         </form>
