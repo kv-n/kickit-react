@@ -19,8 +19,9 @@ const ShoeCard = (props) =>
         <div> posted by: {props.shoe.user}</div>
         {props.currentUser.id === props.shoe.created_by
         ?
-        (
-          <button className="show-edit-btn"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
+        ( <div className='edit-button'>
+          <button className="add"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
+          </div>
         )
         :
         (
