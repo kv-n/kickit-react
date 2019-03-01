@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Login.css'
 import { withRouter } from 'react-router-dom'
+import Footer from '../Components/Footer/Footer'
 
 
 class Login extends Component {
@@ -42,6 +43,7 @@ class Login extends Component {
 
   render(){
     return (
+      <div>
       <div className="login-container">
         <form className="login-flex" onSubmit={this.handleSubmit}>
         <h1 className="login-header">Log in</h1>
@@ -55,8 +57,10 @@ class Login extends Component {
               <input id="login3" className="login-input" type='password' name='password' placeholder="password" onChange={this.handleChange}/>
             </label>
           <button className="login-btn" type='submit'>Login</button>
+          <Footer/>
         </form>
-      </div>
+        </div>  
+        </div>
       )
   }
 }

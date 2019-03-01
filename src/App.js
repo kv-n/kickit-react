@@ -4,7 +4,7 @@ import './App.css';
 import ShowShoe from './Components/ShowShoe/ShowShoe'
 import ShoeIndex from './Components/ShoeIndex/ShoeIndex'
 import Profile from './Components/Profile/Profile'
-import { Route, Switch, withRouter, Redirect, Link } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import Splash from './Components/Landing/Landing'
 import Register from './Components/Register/Register'
 import Login from './Login/Login';
@@ -20,37 +20,6 @@ class App extends Component {
     console.log(currentUser)
     this.setState({ currentUser })
   }
-
-
-  // handleLogout = async () => {
-  //   try {
-  //     const loginResponse = await fetch('http://localhost:8000/api/v1/users/logout', {
-  //       method: 'GET',
-  //       credentials: 'include',
-  //       // body: JSON.stringify(this.state),
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       }
-  //     });
-  //     const parsedResponse = await loginResponse.json();
-  //     console.log(this.state)
-  //     // if (this._isMounted) {
-  //       this.setState({
-  //         currentUser: {}
-  //       })
-  //     // }
-  //     // this.props.history.push("/");
-  //     console.log(parsedResponse, 'logged')
-
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
-
-  // componentWillUnmount() {
-  //   this._isMounted = false
-  // }
-
 
   handleRegister = async (data) => {
     try {
