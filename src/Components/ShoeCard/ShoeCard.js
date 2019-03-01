@@ -16,7 +16,7 @@ const ShoeCard = (props) =>
         <div className="buttons">
         <button className="add">Add to Cart</button>
         <button className="like"><span>♥</span></button>
-        <button className="edit-btn"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
+        <button className="show-edit-btn"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
       </div>
       </div>
     </div>
