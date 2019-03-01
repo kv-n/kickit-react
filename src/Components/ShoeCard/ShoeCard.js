@@ -16,7 +16,18 @@ const ShoeCard = (props) =>
         <div className="buttons">
         <button className="add">Add to Cart</button>
         <button className="like"><span>♥</span></button>
-        <button className="edit-btn"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
+        <div> posted by: {props.shoe.user}</div>
+        <div>current:{props.currentUser.id} shoe:{props.shoe.created_by}</div>
+        {props.currentUser.id === props.shoe.created_by
+        ?
+        (
+          <button className="edit-btn"><Link to={`/shoes/${props.shoe.id}/edit`}>EDIT</Link></button>
+        )
+        :
+        (
+          <div/>
+        )
+        }
       </div>
       </div>
     </div>

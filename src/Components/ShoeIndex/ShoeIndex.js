@@ -23,14 +23,14 @@ class ShoesIndex extends Component {
     }
 
     render() {
-        console.log(this.state)
+        console.log(this.props.currentUser)
         return (
             <div>
                 <h1 className="shoe-index-header">KickIt</h1>
                 <div className="index-flex">
                     {
-                        this.state.shoes.map((s, i) => 
-                            <ShoeCard shoe={s} key={i} />    
+                        this.state.shoes.map((shoe, i) => 
+                            <ShoeCard shoe={shoe} key={i} currentUser={this.props.currentUser}/>    
                         )
                     } 
                 </div>
