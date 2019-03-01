@@ -36,7 +36,7 @@ class Login extends Component {
     console.log(this.state)
     this.props.doSetCurrentUser(parsedResponse)
     this.props.history.push("/shoes");
-    console.log(parsedResponse, 'logged')
+    console.log('login successful')
   }
 
 

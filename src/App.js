@@ -90,6 +90,7 @@ class App extends Component {
           <Route exact path={'/shoes'} component={() => <ShoeIndex />} />
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
           <Route exact path={'/shoes/:id/edit'} component={() => <Edit/>} />
+          <Route exact path={'/login'} component={() => <Login doSetCurrentUser={this.doSetCurrentUser}/>} />
         </Switch>
       </div>
     );
