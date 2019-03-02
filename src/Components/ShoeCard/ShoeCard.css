@@ -141,3 +141,91 @@ a:visited {
 .name-type.posted {
   font-size: .70rem;
 }
+
+@media screen and (max-width: 320px) {
+
+  .ShoeCard-Container {
+    width: 100%; 
+    height: 15rem;
+  }
+
+  .show-shoe {
+    width: 10rem;
+    margin-left: .8rem; 
+    margin-top: 47px;
+  }
+
+  .brand-name, .name-type {
+    font-size: .7em;
+  }
+
+  .price {
+    font-size: .7rem; 
+  }
+
+  .add, .like {
+    height: 2rem; 
+    font-size: .10rem; 
+  }
+
+}
+
+@media screen and (min-width: 375px) {
+  .ShoeCard-Container {
+    width: 100%; 
+    height: 15rem;
+  }
+
+  .show-shoe {
+    width: 12rem;
+    margin-top: 47px;
+  }
+
+  .brand-name, .name-type {
+    font-size: .7em;
+  }
+
+  .price {
+    font-size: 1rem; 
+  }
+
+  .add, .like {
+    height: 1.8rem;
+    font-size: .1rem; 
+  }
+
+  .size {
+    height: .6rem; 
+  }
+
+}
+
+@media screen and (min-width: 768px)  {
+  .ShoeCard-Container {
+    width: 35rem; 
+    height: 19rem;
+  }
+
+  .show-shoe {
+    width: 17rem;
+    margin-top: 47px;
+  }
+
+  .brand-name, .name-type {
+    font-size: 1em;
+  }
+
+  .price {
+    font-size: 1.2rem; 
+  }
+
+  .add, .like {
+    height: 2rem;
+    font-size: .1rem; 
+  }
+
+  .size {
+    height: .6rem; 
+  }
+}
+

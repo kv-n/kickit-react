@@ -55,3 +55,36 @@ a {
 .ternary-nav {
     display: flex; 
 }
+
+@media screen and (max-width: 320px) {
+    .nav-list {
+        font-size: .4rem; 
+    }
+
+    .logo-nav {
+        height: 1rem; 
+        width: 1rem; 
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .nav-list {
+        font-size: .7rem; 
+    }
+    .logo-nav {
+        height: 1.1rem; 
+        width: 1.1rem; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+        font-size: 1rem; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-list {
+        font-size: 1.5rem; 
+    }
+}

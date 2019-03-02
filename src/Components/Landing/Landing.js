@@ -7,7 +7,13 @@ const Splash = (props) => {
     return (
         <div className="splash-container">
         <div className="splash">
-            <Link to="/shoes"><h1>//Kickit.</h1></Link>
+            <Link to="/shoes">
+                <p className="animated-header">
+                    <span>
+                        KickIt
+                    </span>
+                </p>
+            </Link>
 
             
             <video id="bgvid" style={{ width: '100%' }}
