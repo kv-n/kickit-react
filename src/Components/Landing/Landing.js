@@ -8,18 +8,12 @@ const Splash = (props) => {
         <div className="splash-container">
         <div className="splash">
             {/* <Link to="/shoes"><h1>//Kickit.</h1></Link> */}
-
-            <div className='container'>
-  Kick 
-  <div className='flip'>
-    <div><div>Jordan</div></div>
-    <div><div>Nike</div></div>
-    <div><div>Adidas</div></div>
-  </div>
-  It
+            <div className="typing">
+  {/* <h1>//Kick.it</h1> */}
 </div>
 
-
+<div class="bb"></div>
+            
             <video id="bgvid" style={{ width: '100%' }}
                 src="/kickit.mp4"
                 loop
