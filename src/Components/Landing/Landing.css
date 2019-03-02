@@ -119,6 +119,12 @@ video {
     }
   }
 
+  @media screen and (max-width: 414px) {
+      .animated-header {
+          display: none; 
+      }
+  }
+
  
 
 
