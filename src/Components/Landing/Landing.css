@@ -42,90 +42,121 @@ video {
     text-align: center;
 }
 
+
 .Audio {
     display: none;
 }
 
-.animated-header {
-    display: initial;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    display: inline-block;
-    font-size: 2rem; 
-    border-width: 4px 0;
-    padding: 1.5em 0em;
+  /* div{
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
-    width: 40em;
-    margin: 0 0 0 -20em;
+    transform: translate(-50%, -50%);
   }
-.animated-header span {
-    font: 700 4em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-    /* Clip Background Image */
-    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-    /* Animate Background Image */
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-    /* Activate hardware acceleration for smoother animations */
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
+   */
+  .typing > *{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnim 3s steps(50);
+    text-transform: none;
   }
-  
-  /* Animate Background Image */
-  @-webkit-keyframes aitf {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
+  @keyframes typingAnim {
+    from {width:0}
+    to {width:100%}
+  }
+
+  .bb, .bb::before, .bb::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   
-
-
-  @media screen and (max-width: 320px) {
-    .animated-header {
-        display: none; 
-        font-size: 1rem; 
-        top: 25rem; 
-        left: 0; 
+  .bb {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url("https://i.imgur.com/sWeO4J0.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    box-shadow: inset 0 0 0 1px rgba(245, 245, 245, 0.5);
+  }
+  .bb::before, .bb::after {
+    content: '';
+    z-index: -1;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px;
+    animation: clipMe 8s linear infinite;
+  }
+  .bb::before {
+    animation-delay: -4s;
+  }
+  .bb:hover::after, .bb:hover::before {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  @keyframes clipMe {
+    0%, 100% {
+      clip: rect(0px, 220px, 2px, 0px);
     }
-
-    video  {
-        width: 100%; 
-        top: 40%; 
+    25% {
+      clip: rect(0px, 2px, 220px, 0px);
+    }
+    50% {
+      clip: rect(218px, 220px, 220px, 0px);
+    }
+    75% {
+      clip: rect(0px, 220px, 220px, 218px);
     }
   }
-
-  @media screen and (max-width: 375px) {
-    .animated-header {
-        display: none; 
-        font-size: 1rem; 
-        top: 25rem; 
-        left:0; 
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    position: relative;
+    background-color: #0f222b;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+/* @media screen and (max-width: 320px) {
+    .bb {
+        width: 70px;
+        height: 70px;
     }
 
-    video  {
-        width: 100%; 
-        top: 45%; 
+    video {
+        left: 30; 
     }
-  }
+}
 
-  @media screen and (max-width: 414px) {
-      .animated-header {
-          display: none; 
-      }
-  }
+@media screen and (min-width: 375px) {
+    .bb {
+        width: 70px;
+        height: 70px;
+    }
+}
 
- 
+@media screen and (min-width: 768px) {
+    .bb {
+        width: 170px;
+        height: 170px;
+        top: 20rem;
+        left: 14rem;
+    }
+}
 
+@media screen and (min-width: 1024px) {
 
+    
+}
 
+@media screen and (min-width: 1400px) {
+
+} */

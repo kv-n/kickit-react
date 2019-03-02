@@ -19,8 +19,8 @@ a {
 }
 
 .logo-nav {
-    height: 2rem; 
-    width: 2rem; 
+    height: 2.3rem;
+    width: 3rem;
     display: flex;
     padding-left: 1rem;
 }
@@ -115,7 +115,7 @@ a {
 
 @media screen and (min-width: 1400px) {
     .logo-nav {
-        height: 2rem; 
-        width: 2rem; 
+        height: 2.3rem;
+        width: 3rem;
     }
 }
