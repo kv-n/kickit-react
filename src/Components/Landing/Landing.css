@@ -42,76 +42,109 @@ video {
     text-align: center;
 }
 
+
 .Audio {
     display: none;
 }
 
+  /* div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   */
+  .typing > *{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnim 3s steps(50);
+    text-transform: none;
+  }
+  @keyframes typingAnim {
+    from {width:0}
+    to {width:100%}
+  }
 
+  .bb, .bb::before, .bb::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .bb {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url("https://i.imgur.com/sWeO4J0.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    box-shadow: inset 0 0 0 1px rgba(245, 245, 245, 0.5);
+  }
+  .bb::before, .bb::after {
+    content: '';
+    z-index: -1;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px;
+    animation: clipMe 8s linear infinite;
+  }
+  .bb::before {
+    animation-delay: -4s;
+  }
+  .bb:hover::after, .bb:hover::before {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  @keyframes clipMe {
+    0%, 100% {
+      clip: rect(0px, 220px, 2px, 0px);
+    }
+    25% {
+      clip: rect(0px, 2px, 220px, 0px);
+    }
+    50% {
+      clip: rect(218px, 220px, 220px, 0px);
+    }
+    75% {
+      clip: rect(0px, 220px, 220px, 218px);
+    }
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    position: relative;
+    background-color: #0f222b;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+@media screen and (max-width: 320px) {
 
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-body {
-  margin:0px;
-  font-family:'Roboto';
-  text-align:center;
 }
 
-.container {
-  color:#999;
-  text-transform: uppercase;
-  font-size:36px;
-  font-weight:bold;
-  padding-top:200px;  
-  position:fixed;
-  width:100%;
-  bottom:45%;
-  display:block;
+@media screen and (min-width: 375px) {
+
+
 }
 
-.flip {
-  height:50px;
-  overflow:hidden;
+@media screen and (min-width: 768px) {
+
 }
 
-.flip > div > div {
-  color:#fff;
-  padding:4px 12px;
-  height:45px;
-  margin-bottom:45px;
-  display:inline-block;
+
+@media screen and (min-width: 1024px) {
+
+    
 }
 
-.flip div:first-child {
-  animation: show 5s linear infinite;
-}
+@media screen and (min-width: 1400px) {
 
-.flip div div {
-  background:#42c58a;
-}
-.flip div:first-child div {
-  background:#4ec7f3;
-}
-.flip div:last-child div {
-  background:#DC143C;
-}
 
-@keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-}
-
-p {
-  position:fixed;
-  width:100%;
-  bottom:30px;
-  font-size:12px;
-  color:#999;
-  margin-top:200px;
 }

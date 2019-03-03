@@ -19,8 +19,8 @@ a {
 }
 
 .logo-nav {
-    height: 2rem; 
-    width: 2rem; 
+    height: 2.3rem;
+    width: 3rem;
     display: flex;
     padding-left: 1rem;
 }
@@ -54,4 +54,68 @@ a {
 
 .ternary-nav {
     display: flex; 
+}
+
+@media screen and (max-width: 320px) {
+    .nav-list {
+        font-size: .4rem; 
+    }
+
+    .logo-nav {
+        height: 1rem; 
+        width: 2rem; 
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .nav-list {
+        font-size: .7rem; 
+    }
+    .logo-nav {
+        height: 1.1rem; 
+        width: 2rem; 
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .nav-list {
+        font-size: .8rem; 
+    }
+
+    .logo-nav {
+        height: 1.5rem; 
+        width: 2.5rem; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+        font-size: 1.3rem;
+    }
+
+    .animated-header {
+       
+    }
+
+    .logo-nav {
+        height: 2rem; 
+        width: 3rem; 
+    }
+
+    .splash {
+        width: 134%; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-list {
+        font-size: 1.5rem; 
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .logo-nav {
+        height: 2.3rem;
+        width: 3rem;
+    }
 }

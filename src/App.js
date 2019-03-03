@@ -9,6 +9,7 @@ import Splash from './Components/Landing/Landing'
 import Register from './Components/Register/Register'
 import Login from './Login/Login';
 import Navigation from './Components/Navigation/Navigation'
+import PayPage from './PayPage/PayPage'
 
 
 class App extends Component {
@@ -64,6 +65,7 @@ class App extends Component {
           <Route exact path={'/shoes/:id'} component={() => <ShowShoe />} />
           <Route exact path={'/shoes/:id/edit'} component={() => <Edit/>} />
           <Route exact path={'/login'} component={() => <Login doSetCurrentUser={this.doSetCurrentUser}/>} />
+          <Route exact path={'/checkout'} component={() => <PayPage/>} />
         </Switch>
       </div>
     );

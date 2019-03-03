@@ -32,7 +32,7 @@ body {
     border:none;
     background-color:black;
     /* border-radius: .5rem;  */
-    padding: .5rem; 
+    padding: 1.2rem; 
     outline: none; 
     font-size: 1rem; 
     color:white;
@@ -42,6 +42,11 @@ body {
 
 .login-input:focus{
     border-bottom: .1rem solid white;
+}
+
+.error-message {
+    color: #fff; 
+    font-size: 1rem; 
 }
 
 .login-btn {

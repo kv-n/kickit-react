@@ -1,27 +1,4 @@
-.register-container {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-}
- 
-.register-container input {
-    width: 15rem; 
-    height: 1rem; 
-    /* border: 0rem solid #fff;  */
-    border:none;
-    background-color:black;
-    /* border-radius: .5rem;  */
-    padding: 1.2rem; 
-    outline: none; 
-    font-size: 1rem; 
-    color:white;
-    border-bottom: .05rem solid white;
-    transition: all .2s
-}
-
-.register-header {
+.pay-header {
     color: #fff; 
     text-align: center; 
     font-size: 3rem; 
@@ -29,7 +6,42 @@
     text-transform: none; 
 }
 
-.register-btn {
+.Pay-Container {
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.Pay-Container input {
+    width: 15rem; 
+    height: 1rem; 
+    /* border: 0rem solid #fff;  */
+    border:none;
+    background-color:black;
+    /* border-radius: .5rem;  */
+    padding: 2rem; 
+    outline: none; 
+    font-size: 1rem; 
+    color:white;
+    border-bottom: .05rem solid white;
+    transition: all .2s
+}
+
+.input-margin {
+    margin-bottom: 2rem; 
+}
+
+.pay-form-flex {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.checkout-btn {
     width: 10rem; 
     height: 3rem; 
     border: 0rem solid #fff; 
@@ -41,24 +53,11 @@
     font-size: 1rem; 
 }
 
-.register-btn:hover {
+.checkout-btn:hover {
     background-color: #CCA9AC; 
     transform: translateY(-.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-.register-btn:active {
+.checkout-btn:active {
     transform: translateY(-.1rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.register-input1 {
-    margin-bottom: 1rem; 
-    
-}
-
-.register-input2 {
-    margin-bottom: 1rem; 
-}
-
-.register-input3 {
-    margin-bottom: 2rem;
-}

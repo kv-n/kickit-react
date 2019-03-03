@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css'
 import { withRouter } from 'react-router-dom'
-import Footer from '../Components/Footer/Footer'
-
 
 class Login extends Component {
   constructor(){
@@ -67,8 +65,8 @@ class Login extends Component {
     return (
       <div>
       <div className="login-container">
-        <h1>{this.state.message}</h1>
         <form className="login-flex" onSubmit={this.handleSubmit}>
+        <h1 className="error-message">{this.state.message}</h1>
         <h1 className="login-header">Log in</h1>
             <label>
               <input id="login1" className="login-input" type='text' name='username' placeholder="username" onChange={this.handleChange} value={username} autoComplete="off"/>
