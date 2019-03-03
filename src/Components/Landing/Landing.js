@@ -12,7 +12,7 @@ const Splash = (props) => {
   {/* <h1>//Kick.it</h1> */}
 </div>
 
-<Link to='/shoes'><div class="bb"></div></Link>
+<Link to='/shoes'><div className="bb"></div></Link>
             
             <video id="bgvid" style={{ width: '100%' }}
                 src="/kickit.mp4"

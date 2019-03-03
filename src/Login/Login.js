@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css'
 import { withRouter } from 'react-router-dom'
-import Footer from '../Components/Footer/Footer'
-
 
 class Login extends Component {
   constructor(){

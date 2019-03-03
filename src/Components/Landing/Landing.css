@@ -125,32 +125,19 @@ video {
     box-sizing: border-box;
   }
   
-/* @media screen and (max-width: 320px) {
-    .bb {
-        width: 70px;
-        height: 70px;
-    }
+@media screen and (max-width: 320px) {
 
-    video {
-        left: 30; 
-    }
 }
 
 @media screen and (min-width: 375px) {
-    .bb {
-        width: 70px;
-        height: 70px;
-    }
+
+
 }
 
 @media screen and (min-width: 768px) {
-    .bb {
-        width: 170px;
-        height: 170px;
-        top: 20rem;
-        left: 14rem;
-    }
+
 }
+
 
 @media screen and (min-width: 1024px) {
 
@@ -159,4 +146,5 @@ video {
 
 @media screen and (min-width: 1400px) {
 
-} */
+
+}

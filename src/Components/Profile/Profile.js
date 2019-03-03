@@ -47,7 +47,8 @@ class Profile extends Component {
     }
     
     render() {
-        const { brand, name, description, size, price, picture, created_by } = this.state
+        const { brand, name, description, size, price, picture } = this.state
+        const isEnabled = brand.length > 0 && name.length > 0 && description.length > 0 && size.length > 0 && price.length > 0 && picture.length > 0
         return(
             <div className="profile-container">
                 <form className="Forms-Container" onSubmit={this.handleSubmit}>
@@ -59,7 +60,7 @@ class Profile extends Component {
                     <input className="input4"  onChange={this.handleInput.bind(this)} type="text" name="size" placeholder="Size" value={size} autoComplete="off"/>
                     <input className="input5"  onChange={this.handleInput.bind(this)} type="text" name="price" placeholder="Price" value={price} autoComplete="off"/>
                     {/* <input className="input6" onChange={(e) => this.handleInput(e)} type="text" name="created_by" placeholder="created by" value={created_by}/> */}
-                    <button type="submit" onClick={() => new Audio(mp3_file).play()} className="profile-btn">Kickit</button>
+                    <button type="submit" onClick={() => new Audio(mp3_file).play()} className="profile-btn" disabled={!isEnabled}>Kickit</button>
                 </form>
             </div>
         )
