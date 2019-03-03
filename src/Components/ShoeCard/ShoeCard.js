@@ -14,7 +14,7 @@ const ShoeCard = (props) =>
         <h2 className="price">${props.shoe.price}</h2>
         <h4 className="name-type posted">{props.shoe.description}</h4>
         <div className="buttons">
-        <button className="add">Add to Cart</button>
+        <Link to={'/checkout'}><button className="add">Add to Cart</button></Link>
         <button className="like"><span>♥</span></button>
         <h6 className="name-type posted"> posted by: {props.shoe.user}</h6>
         {props.currentUser.id === props.shoe.created_by
