@@ -4,7 +4,7 @@ import './ShowShoe.css'
 
 // extend class component
 // component did mount and garb the shoe by the id in the params
-// fetch('http://localhost:8000/api/v1/shoes/${this.props.match.params.id})
+// fetch(`http://${process.env.REACT_APP_API_URL}/api/v1/shoes/${this.props.match.params.id}`)
 class ShowShoe extends Component {
     state = {
         shoes: {},
@@ -17,7 +17,7 @@ class ShowShoe extends Component {
 
   getShoes = async () => {
     try {
-      const shoeResponse = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`)
+      const shoeResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/shoes/${this.props.match.params.id}`)
       
       const shoeParsed = await shoeResponse.json()
       console.log(shoeParsed)

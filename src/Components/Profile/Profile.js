@@ -34,7 +34,7 @@ class Profile extends Component {
     handleSubmit = async (e) => {
         e.preventDefault();
         
-        const shoesResponse = await fetch('http://localhost:8000/api/v1/shoes', {
+        const shoesResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/shoes`, {
           method: 'POST',
           credentials: 'include',
           body: JSON.stringify(this.state),

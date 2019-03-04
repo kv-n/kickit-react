@@ -21,9 +21,9 @@ class Edit extends Component {
     }
 
     getShoes = async () => {
-        console.log(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`)
+        console.log(`${process.env.REACT_APP_API_URL}/api/v1/shoes/${this.props.match.params.id}`)
         try {
-          const shoeResponse = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`)
+          const shoeResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/shoes/${this.props.match.params.id}`)
           const shoeParsed = await shoeResponse.json()
           console.log(shoeParsed)
           this.setState({
@@ -46,7 +46,7 @@ class Edit extends Component {
         e.preventDefault();
         // console.log(`${this.props.match.params.id}`)
         // console.log(this.state)
-        const shoe = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}/edit`, {
+        const shoe = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/shoes/${this.props.match.params.id}/edit`, {
           method: 'PUT',
           credentials: 'include',
           body: JSON.stringify(this.state.shoe),
@@ -61,7 +61,7 @@ class Edit extends Component {
 
     handleDelete = async (e) => {
         e.preventDefault();
-        const shoe = await fetch(`http://localhost:8000/api/v1/shoes/${this.props.match.params.id}`, {
+        const shoe = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/shoes/${this.props.match.params.id}`, {
           method: 'DELETE',
           credentials: 'include',
           body: JSON.stringify(this.state.shoe),

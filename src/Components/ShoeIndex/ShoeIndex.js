@@ -9,7 +9,7 @@ class ShoesIndex extends Component {
 
     async componentDidMount () {
         try {
-            const shoeResponse = await fetch(`http://localhost:8000/api/v1/shoes`)
+            const shoeResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/shoes`)
             
             const shoeParsed = await shoeResponse.json()
             console.log(shoeParsed)

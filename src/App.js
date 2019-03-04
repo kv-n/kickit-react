@@ -25,7 +25,7 @@ class App extends Component {
 
   handleRegister = async (data) => {
     try {
-      const registerResponse = await fetch('http://localhost:8000/api/v1/users', {
+      const registerResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/users`, {
         method: 'POST',
         credentials: 'include',
         body: JSON.stringify(data),
