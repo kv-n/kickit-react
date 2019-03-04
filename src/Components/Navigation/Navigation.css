@@ -101,10 +101,6 @@ a {
         height: 2rem; 
         width: 3rem; 
     }
-
-    .splash {
-        width: 134%; 
-    }
 }
 
 @media screen and (min-width: 1024px) {
