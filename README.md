@@ -12,6 +12,7 @@
 * Python3
 * React
 * CSS 
+* Postman
 
 **GETTING STARTED -** 
 We used extensive wireframeing to map out the models, routes, and the layout of the app. Then we listed features that would enhance the user experience and researched sites like SNKRS and GOAT before choosing our style direction. 
@@ -22,7 +23,7 @@ We used extensive wireframeing to map out the models, routes, and the layout of 
 </br>Kevin Cuison - Git Master and back end manager.</br>
 Brent Ahrens - Front end manager. 
 
-**BIGGEST CHALLENGE -** Resolving the CORS issues from React communicating with Flask. 
+**BIGGEST CHALLENGE -** Resolving the CORS issues from React communicating with Flask. Going from one language to another. 
 
 **FUTURE PLANS -** 
 * Search Bar 
@@ -30,3 +31,4 @@ Brent Ahrens - Front end manager.
 * Web socket for direct messeges to users 
 * link articles for shoe releases 
 * wish list for users  
+
