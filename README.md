@@ -1,5 +1,8 @@
 # Kick It  
 **DESCRIPTION -**
+
+App Link: https://kickit-sneakers.herokuapp.com
+
 'Kick it' is a fully responsive CRUD app designed for sneakerheads to upload and resell exclusive shoes. 
 
 ![GitHub Logo](https://i.imgur.com/lhI7oJh.png)
